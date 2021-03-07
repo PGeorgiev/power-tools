@@ -1,26 +1,8 @@
 <?php
-/**
- * WP CLI Themecheck Command.
- *
- * @author    PGeorgiev <hi@pgeorgiev.dev>
- * @license   MIT
- * @link      https://github.com/PGeorgiev/wp-cli-themecheck/
- */
-
-if ( ! class_exists( 'WP_CLI' ) ) {
-	return;
-}
-
-use WP_CLI\Utils as Utils;
-use Symfony\Component\Finder\Finder;
-
-if ( ! class_exists( 'WP_CLI_Themecheck_Command' ) ) :
-
 	/**
 	 * Themecheck_Command class.
 	 */
-	class WP_CLI_Themecheck_Command extends WP_CLI_Command {
-
+	class PowerTools_Themecheck_Command extends WP_CLI_Command {
 		/**
 		 * Run themecheck in CLI.
 		 *
@@ -269,5 +251,5 @@ if ( ! class_exists( 'WP_CLI_Themecheck_Command' ) ) :
 		}
 	}
 
-	WP_CLI::add_command( 'themecheck', 'WP_CLI_Themecheck_Command' );
+	WP_CLI::add_command( 'pt themecheck', 'PowerTools_Themecheck_Command' );
 endif;
