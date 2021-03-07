@@ -253,4 +253,4 @@
 		}
 	}
 
-    WP_CLI::add_command( 'pt themecheck', 'PowerTools_ThemeCheck_Command' );
+    WP_CLI::add_command( 'themecheck', 'PowerTools_ThemeCheck_Command' );
