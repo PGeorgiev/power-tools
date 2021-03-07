@@ -18,3 +18,6 @@ require_once 'commands/image.php';
 
 // Widget.
 require_once 'commands/widget.php';
+
+// ThemeCheck
+require_once 'commands/themecheck.php';
